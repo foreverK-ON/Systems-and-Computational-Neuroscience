@@ -117,9 +117,11 @@ def main():
     print("\n\n" + "=" * 70)
     print("CREATING VISUALIZATIONS")
     print("=" * 70)
+    visualization_created = False
     try:
         plot_learning_curve(losses)
         plot_evolution_progress(neuroevo)
+        visualization_created = True
     except Exception as e:
         print(f"Note: Visualization skipped (matplotlib not available): {e}")
     
@@ -133,7 +135,7 @@ def main():
     print("  - reproduction.py: Pattern replication mechanisms")
     print("  - innovation.py: Evolutionary algorithms")
     print("  - main.py: This integrated demonstration")
-    if losses:
+    if visualization_created:
         print("  - reproduction_learning.png: Learning curves")
         print("  - evolution_progress.png: Evolution progress")
     print("\nThese implementations showcase how biological neural systems")

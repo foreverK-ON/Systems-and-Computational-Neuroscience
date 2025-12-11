@@ -138,7 +138,7 @@ class NeuroEvolution:
         # Create offspring through mutation (innovation)
         while len(next_generation) < self.population_size:
             # Tournament selection: pick best of random subset
-            tournament = np.random.choice(self.population[:len(self.population)//2], size=2, replace=False)
+            tournament = np.random.choice(self.population[:self.population_size//2], size=2, replace=False)
             parent = max(tournament, key=lambda x: x.fitness)
             
             # Create offspring with mutation
