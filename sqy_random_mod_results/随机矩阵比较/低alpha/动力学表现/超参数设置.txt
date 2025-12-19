@@ -1,0 +1,22 @@
+rho          1.2
+gamma        0.0
+alpha_r      0.1
+accuracy    63.0
+Name: 175, dtype: float64
+Results saved to grid_search_results.csv
+
+
+=== Phase 1: Short Delay Test ===
+Short Delay Accuracy: 46.00%
+Selected 412 memory-selective neurons out of 600
+Short Delay TI: 1.5327
+Plotting 412 selective neurons.
+Heatmap saved to: visualize\heatmap_short_delay_acc46.png
+
+=== Phase 2: Long Delay Test (Generalization) ===
+Long Delay Accuracy: 58.00%
+Identifying selective neurons for Long Delay...
+Selected 383 memory-selective neurons out of 600
+Long Delay TI: 1.5505
+Plotting 383 selective neurons.
+Heatmap saved to: visualize\heatmap_long_delay_acc58.png

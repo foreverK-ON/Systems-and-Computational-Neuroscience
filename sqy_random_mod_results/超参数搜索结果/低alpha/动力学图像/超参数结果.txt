@@ -1,0 +1,17 @@
+rho          1.2
+gamma        0.0
+alpha_r      0.1
+accuracy    79.0
+Name: 75, dtype: float64
+=== Phase 1: Short Delay Test ===
+Short Delay Accuracy: 98.00%
+Selected 573 memory-selective neurons out of 600
+Short Delay TI: 1.4685
+Plotting 573 selective neurons.
+
+=== Phase 2: Long Delay Test (Generalization) ===
+Long Delay Accuracy: 67.00%
+Identifying selective neurons for Long Delay...
+Selected 571 memory-selective neurons out of 600
+Long Delay TI: 1.5220
+Plotting 571 selective neurons.
