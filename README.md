@@ -25,7 +25,7 @@ RC 的提出本身与大脑皮层的信息处理方式存在对应：
 
 ### ESN 动力学
 
-* reservoir 状态更新（tanh 单元，标量输入）：
+* 储层状态更新（tanh 单元，标量输入）：
     $$x_{t+1} = \tanh(W_{res} x_t + W_{in} u_t)$$
 * 读出层（线性读出；训练用线性回归/岭回归）：
     $$\hat{y}\_t = w\_{out}^T x\_t + b$$
@@ -35,7 +35,7 @@ RC 的提出本身与大脑皮层的信息处理方式存在对应：
 * $x_t \in \mathbb{R}^N$：时间 $t$ 的储层状态向量。
 * $u_t \in \mathbb{R}$：时间 $t$ 的输入标量。
 * $W_{res} \in \mathbb{R}^{N \times N}$：循环权重矩阵（固定不训练）。
-* $W_{in} \in \mathbb{R}^{N \times 1}$：输入到 reservoir 的投影权重。
+* $W_{in} \in \mathbb{R}^{N \times 1}$：输入到储层的投影权重。
 * $\hat{y}_t \in \mathbb{R}$：时间 $t$ 的模型输出（本实验输出为一维标量）。
 * $w_{out} \in \mathbb{R}^N$：读出层权重向量（需要训练）。
 * $b \in \mathbb{R}$：读出层偏置项（需要训练）。
